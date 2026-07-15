@@ -1,0 +1,26 @@
+.closebutton {
+cursor: pointer;
+font-family: system-ui;
+margin-left: 410px;
+margin-top: -10px;
+font-size:x-large;
+}
+
+.window {
+border: solid;
+width : 550px;
+padding: 20px;
+border-radius: 12px;
+padding: 22px; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #B5C7EB;
+}
+
+.windowheader {
+display: flex;
+align-items: center;
+margin-top: -20px;
+}

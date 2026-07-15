@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
   <body style="background-image: url(./kdeWallpaper.png); background-size: cover; height: 100vh">
-      <div style="border: solid; width : 550px; padding: 20px; border-radius: 12px; padding: 22px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #B5C7EB;">
+      <div class="window" id="welcome">
+        <div class="windowheader" id="welcomeheader" style="display: flex; align-items: center; margin-top: -20px;">
+
+       <img style="width: 40px; height: 40px;" src="Barch linux logo.png"> 
+       <p style="font-family: system-ui; padding-left: 25px;">Welcome!</p>
+       <p  class="closebutton" id="welcomeclose">x</p>
+
+        </div>
     <h1 style="font-family: system-ui; background: white; border-radius: 8px; padding: 12px; text-align: center;">Welcome to Barch Linux!</h1>
   <p style="font-family: system-ui; text-align: center;">Parody of Arch Linux! </p>
   <img style="width: 111px; border-radius: 5px;" src="Barch linux logo.png" />
@@ -21,16 +31,8 @@
 
              </p>
       </div>
-    <script>
-         function updateTime() {
-
-          var currentTime = new Date().toLocaleString();
-            var timeText = document.querySelector("#timeElement");
-            timeText.innerHTML = currentTime;
-
-         }
-         setInterval(updateTime,1000);
-    </script>
+    <script src="script.js"></script>
+  
   </body>
 
 </html>
