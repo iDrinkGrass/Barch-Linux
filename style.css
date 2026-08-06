@@ -4,6 +4,7 @@ font-family: system-ui;
 margin-left: 410px;
 margin-top: -10px;
 font-size:x-large;
+color: black;
 }
 
 .window {
@@ -23,4 +24,15 @@ background-color: #B5C7EB;
 display: flex;
 align-items: center;
 margin-top: -20px;
+user-select: none;
+cursor: grab;
+}
+
+.selected {
+background-color:rgba(100,100,100,0.7);
+border-radius: 12px;
+outline: 2px solid white;
+width: 80px;
+margin-right: 20px;
+height: 115px;
 }

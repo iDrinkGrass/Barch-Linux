@@ -53,7 +53,7 @@ function closeWindow(element) {
 }
 
 function openWindow(element) {
-  element.style.display = "flex"
+  element.style.display = "block"
 }
 
 var welcomeScreenClose = document.querySelector("#welcomeclose")
@@ -67,3 +67,33 @@ welcomeScreenClose.addEventListener("click", function() {
 welcomeScreenOpen.addEventListener("click", function() {
   openWindow(welcomeScreen);
 });
+
+var selectedIcon = undefined
+
+function selectIcon(element) {
+  element.classList.add("selected");
+  selectedIcon = element
+} 
+
+function deselectIcon(element) {
+  element.classList.remove("selected");
+  selectedIcon = undefined
+} 
+
+function handleIconTap(element) {
+   if (element.classList.contains("selected")) {
+     deselectIcon(element);
+    closeWindow(document.getElementById("terminal"))
+   } else {
+    selectIcon(element);
+    openWindow(document.getElementById("terminal"))
+   }
+
+}
+dragElement(document.getElementById("terminal"));
+
+closeWindow(document.getElementById('terminal'))
+document.getElementById('terminalclose').addEventListener("click",()=>{
+  closeWindow(document.getElementById('terminal'))
+   deselectIcon(document.getElementById("terminalAppIcon"));
+})

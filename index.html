@@ -20,9 +20,9 @@
   <s style="font-family: system-ui; padding-left: 136px;"> My old website is super tuff and high quality</s>
       </div>
       <div style="display: flex; justify-content: space-between; padding: 6.5px; background-color: darkslategrey; border-radius: 15px;">
-             <p style="font-family: system-ui; background-color: grey; border-radius: 8px; padding: 5px;">
+             <p id="welcomeopen" style="font-family: system-ui; background-color: grey; border-radius: 8px; padding: 5px;">
 
-                Barch Linux
+                Barch Linux Welcome!
 
              </p>
              <p id="timeElement" style="font-family: system-ui; background-color: grey; border-radius: 8px; padding: 5px;">
@@ -30,7 +30,27 @@
                 7/10/2026 11:48 AM
 
              </p>
+       </div>
+
+    <div id="desktopApps" style="padding-top: 60px;" >
+       <div id="terminalAppIcon" onclick = "handleIconTap(this)" style="font-family: system-ui; margin-left: 60px; padding: 12px;">
+      
+        <img src="./linux-terminal.png" style="width: 75px; height: 75px; border-radius: 15px;">
+      <p style="margin-top: 2px;">Terminal</p>
+      
+       </div> 
+    </div>
+    <div class="window" id="terminal" style="background-color: #2e2e2f; height: 400px; color: #ffffff; border-color: #000000;">
+        <div class="windowheader" id="terminalheader" style="display: flex; align-items: center; margin-top: -20px;">
+
+       <img style="width: 40px; height: 40px;" src="Barch linux logo.png"> 
+       <p style="font-family: system-ui; padding-left: 25px;">Terminal</p>
+       <p class="closebutton" id="terminalclose" onclick="windowclose(document.getElementById('terminal'))">x</p>
+
+        </div>
+  <p style="font-family: system-ui; text-align: left;">user@barchlinux ~> </p>
       </div>
+    
     <script src="script.js"></script>
   
   </body>
