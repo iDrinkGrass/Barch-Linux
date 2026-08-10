@@ -21,6 +21,9 @@ Hello, I made a WebOS for the Hack Club Stardance challenge. Barch Linux is basi
 * CSS
 * JavaScript
 
+## Github Pages
+https://idrinkgrass.github.io/Barch-Linux/
+
 
 Also tysm to Blxm for helping me :D
 
