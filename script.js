@@ -84,9 +84,11 @@ function handleIconTap(element) {
    if (element.classList.contains("selected")) {
      deselectIcon(element);
     closeWindow(document.getElementById("terminal"))
+    document.querySelector("#terminalInnerBody").innerHTML=``
    } else {
     selectIcon(element);
     openWindow(document.getElementById("terminal"))
+    document.querySelector("input").focus()
    }
 
 }
@@ -96,4 +98,14 @@ closeWindow(document.getElementById('terminal'))
 document.getElementById('terminalclose').addEventListener("click",()=>{
   closeWindow(document.getElementById('terminal'))
    deselectIcon(document.getElementById("terminalAppIcon"));
+   document.querySelector("#terminalInnerBody").innerHTML=``
 })
+
+document.querySelector("input").addEventListener("keyup",(e)=>{
+  if(e.key == "Enter"){
+    let newLine = document.createElement("br")
+    document.querySelector("#terminalInnerBody").appendChild(newLine)
+    let newElement = document.createElement("span")
+    newElement.innerHTML= "Linux Linux Linux (im to lazy to actually make the terminal do stuff)"
+    document.querySelector("#terminalInnerBody").appendChild(newElement)
+  }})

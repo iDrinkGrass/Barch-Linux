@@ -36,3 +36,15 @@ width: 80px;
 margin-right: 20px;
 height: 115px;
 }
+
+input:active {
+    outline: none;
+}
+
+input:hover {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}

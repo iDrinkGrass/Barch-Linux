@@ -45,10 +45,16 @@
 
        <img style="width: 40px; height: 40px;" src="Barch linux logo.png"> 
        <p style="font-family: system-ui; padding-left: 25px;">Terminal</p>
-       <p class="closebutton" id="terminalclose" onclick="windowclose(document.getElementById('terminal'))">x</p>
+       
+       <p class="closebutton" id="terminalclose" onclick="closeWindow(document.getElementById('terminal'))">x</p>
 
         </div>
-  <p style="font-family: system-ui; text-align: left;">user@barchlinux ~> </p>
+        <div id="terminalBody" style="display: inline-block; width: 100%;">
+  <p style="font-family: system-ui; text-align: left; margin-right: 0px; display: inline-block;">user@barchlinux ~> </p>
+  <input style="background-color: transparent; border: none; color: white; display: inline-block; font-family: system-ui; font-size: 16px;" autofocus>
+  <br>
+  <div id="terminalInnerBody"></div>
+        </div>
       </div>
     
     <script src="script.js"></script>
