@@ -7,6 +7,7 @@ Hello, I made a WebOS for the Hack Club Stardance challenge. Barch Linux is basi
 * Welcome Window
 * Terminal App (Somewhat functional)
 * Functional Clock and Date
+* Links Window
 
 ## Notes
 
