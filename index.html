@@ -56,6 +56,37 @@
   <div id="terminalInnerBody"></div>
         </div>
       </div>
+
+      <div id="desktopApps" style="margin-top: 120px; margin-left: 60px;">
+         <div id="linksAppIcon" onclick = "handleIconLinksTap(this)" style="font-family: system-ui; margin-left: 25px; padding: 12px;">
+
+        <img src="./links icon.png" style="width: 75px; height: 75px; border-radius: 15px;">
+        <p style="margin-left: 10px;">Links</p>
+         </div>
+      </div>
+      <div class="window" id="links" style="background-color: #B5C7EB; height: 400px; color: #000000; border-color: #000000;">
+        <div class="windowheader" id="linksheader" style="display: flex; align-items: center; margin-top: -20px;">
+
+           <p style="margin-left: 555px;" class="closebutton" id="linksclose" onclick="closeWindow(document.getElementById('links'))">x</p>
+
+           </div>
+           <div id="linksBody" style="display: inline-block; width: 100%;">
+  <p style="font-family: system-ui; margin-left: 50px; display: inline-block; position: fixed; top: 0px; left: 5px; font-size: 30px;">My links! </p>
+  <br>
+  <br>
+  <a class="link" href="https://github.com/iDrinkGrass">My Github</a> <img style="width: 19px; height: auto;" src="github logo.png" alt="github logo">
+  <br>
+  <br>
+  <a class="link" href="https://www.youtube.com/@IDrinkGrass-k2z">My unused Youtube channel</a> <img style="width: 30px; height: auto;" src="youtube logo.png" alt="youtube logo">
+  <br>
+  <br>
+  <a class="link" href="https://scratch.mit.edu/users/idrinkgras/">My Scratch</a> <img style="width: 20px; height: auto;" src="scratch logo.png" alt="scratch logo">
+  <br>
+  <br>
+  <a class="link" href="https://discord.com/users/934281439384588378">My Discord</a> <img style="width: 19px; height: auto;" src="discord logo.webp" alt="discord logo">
+  <div id="linksInnerBody"></div>
+        </div>
+      </div>
     
     <script src="script.js"></script>
   

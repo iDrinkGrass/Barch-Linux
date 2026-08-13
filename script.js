@@ -109,3 +109,27 @@ document.querySelector("input").addEventListener("keyup",(e)=>{
     newElement.innerHTML= "Linux Linux Linux (im to lazy to actually make the terminal do stuff)"
     document.querySelector("#terminalInnerBody").appendChild(newElement)
   }})
+
+ let links = document.getElementById("links")
+  var linksClose = document.querySelector("#linksclose")
+
+linksClose.addEventListener("click", function() {
+  closeWindow(links);
+});
+
+
+dragElement(document.getElementById("links"));
+
+function handleIconLinksTap(element) {
+   if (element.classList.contains("selected")) {
+     deselectIcon(element);
+    closeWindow(document.getElementById("links"))
+    document.querySelector("#linksInnerBody").innerHTML=``
+   } else {
+    selectIcon(element);
+    openWindow(document.getElementById("links"))
+    document.querySelector("input").focus()
+   }
+
+}
+closeWindow(links);
